@@ -26,6 +26,6 @@ run_segment() {
 		fi
 	fi
 
-	hostname ${opts}
+	echo -n " " && hostname ${opts}
 	return 0
 }

@@ -13,7 +13,7 @@ EORC
 run_segment() {
 	__process_settings
     percentage=$(df ${TMUX_POWERLINE_SEG_DISK_USAGE_FILESYSTEM} | awk '{print $5}' | tail -n1)
-    echo "${TMUX_POWERLINE_SEG_DISK_USAGE_FILESYSTEM} ${percentage}"
+    echo " ${TMUX_POWERLINE_SEG_DISK_USAGE_FILESYSTEM} ${percentage}"
 	return 0
 }
 
